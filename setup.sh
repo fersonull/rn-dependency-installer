@@ -56,7 +56,7 @@ const config = mergeConfig(getDefaultConfig(__dirname), {
 module.exports = withNativeWind(config, { input: "./global.css" });
 EOF
 
-echo -e "${BLUE}Renaming the ${BOLD}.tsx${RESET}${BLUE} extension to ${BOLD}.jsx${RESET}..."
+echo -e "${BLUE}Renaming the ${BOLD}.tsx${RESET}${BLUE} extension to ${BOLD}.jsx...${RESET}"
 mv ./App.tsx ./App.jsx
 
 echo -e "${BLUE}Finishing up...${RESET}"
@@ -86,7 +86,7 @@ module.exports = {
 };
 EOF
 
-echo -e "\n${GREEN}${BOLD}INSTALLATION FINISHED!${RESET}"
+echo -e "\n${GREEN}${BOLD}INSTALLATION FINISHED!${RESET}\n"
 
 cat << 'EOF' | tee installed-deps.txt
 Installed Dependencies:
@@ -106,7 +106,7 @@ Installed Dependencies:
 - lucide-react-native
 EOF
 
-echo -e "\nYou can verify see the list of all installed dependencies in ${BOLD}installed-deps.txt${RESET} file"
+echo -e "\nYou can verify and see the list of all installed dependencies in ${BOLD}installed-deps.txt${RESET} file"
 
 echo -e "\nrun your project now:${BLUE}${BOLD} npm run android${RESET}"
 
