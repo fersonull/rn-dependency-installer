@@ -9,7 +9,6 @@ RESET="\e[0m"
 BOLD="\e[1m"
 
 echo -e "\n${BLUE}${BOLD}REACT NATIVE DEPENDENCY INSTALLER SCRIPT${RESET}"
-echo -e "\n${RED}${BOLD}NOTE:${RESET}${RED} THIS SCRIPT ONLY INSTALLS ANDROID DEPENDENCIES AT THE MOMENT."
 
 echo -e "\n${YELLOW}Installing ${BOLD}nativewind...${RESET}"
 npm install nativewind react-native-reanimated react-native-safe-area-context@5.4.0
@@ -77,7 +76,7 @@ EOF
 
 echo -e "\n${GREEN}${BOLD}NATIVEWIND INSTALLED!${RESET}\n"
 
-echo -e "${YELLO}Installing necessary native dependencies...${RESET}"
+echo -e "${YELLOW}Installing necessary native dependencies...${RESET}"
 npm i react-native-reanimated react-native-svg react-native-safe-area-context react-native-screens @react-navigation/native @react-navigation/native-stack @react-navigation/bottom-tabs @react-navigation/drawer react-native-gesture-handler lucide-react-native react-native-bootsplash
 
 cat << 'EOF' > babel.config.js
@@ -88,6 +87,27 @@ module.exports = {
 EOF
 
 echo -e "\n${GREEN}${BOLD}INSTALLATION FINISHED!${RESET}"
+
+cat << 'EOF' | tee installed-deps.txt
+Installed Dependencies:
+- tailwindcss
+- nativewind
+- @react-navigation/native
+- @react-navigation/native-stack
+- @react-navigation/bottom-tabs
+- @react-navigation/drawer
+- react-native-screens
+- react-native-safe-area-context
+- react-native-worklets
+- react-native-reanimated
+- react-native-gesture-handler
+- react-native-svg
+- react-native-bootsplash
+- lucide-react-native
+EOF
+
+echo -e "\nYou can verify see the list of all installed dependencies in ${BOLD}installed-deps.txt${RESET} file"
+
 echo -e "\nrun your project now:${BLUE}${BOLD} npm run android${RESET}"
 
 echo -e "\n${YELLOW}visit and follow my github page for more:${BOLD} https://github.com/fersonull${RESET}"
