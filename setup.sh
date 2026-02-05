@@ -77,7 +77,7 @@ EOF
 echo -e "\n${GREEN}${BOLD}NATIVEWIND INSTALLED!${RESET}\n"
 
 echo -e "${YELLOW}Installing necessary native dependencies...${RESET}"
-npm i react-native-reanimated react-native-svg react-native-safe-area-context react-native-screens @react-navigation/native @react-navigation/native-stack @react-navigation/bottom-tabs @react-navigation/drawer react-native-gesture-handler lucide-react-native react-native-bootsplash
+npm i react-native-reanimated react-native-svg react-native-safe-area-context react-native-screens @react-navigation/material-top-tabs @react-navigation/native @react-navigation/native-stack @react-navigation/bottom-tabs @react-navigation/drawer react-native-gesture-handler lucide-react-native react-native-bootsplash @react-native-async-storage/async-storage
 
 cat << 'EOF' > babel.config.js
 module.exports = {
@@ -95,7 +95,9 @@ Installed Dependencies:
 - @react-navigation/native
 - @react-navigation/native-stack
 - @react-navigation/bottom-tabs
+- @react-navigation/material-top-tabs
 - @react-navigation/drawer
+- @react-native-async-storage/async-storage
 - react-native-screens
 - react-native-safe-area-context
 - react-native-worklets
