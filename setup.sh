@@ -77,7 +77,7 @@ EOF
 echo -e "\n${GREEN}${BOLD}NATIVEWIND INSTALLED!${RESET}\n"
 
 echo -e "${YELLOW}Installing necessary native dependencies...${RESET}"
-npm i react-native-reanimated react-native-svg react-native-safe-area-context react-native-screens @react-navigation/material-top-tabs @react-navigation/native @react-navigation/native-stack @react-navigation/bottom-tabs @react-navigation/drawer react-native-gesture-handler lucide-react-native react-native-bootsplash @react-native-async-storage/async-storage
+npm i react-native-reanimated react-native-svg react-native-safe-area-context react-native-screens @react-navigation/material-top-tabs @react-navigation/native @react-native-vector-icons/lucide @react-navigation/native-stack @react-navigation/bottom-tabs @react-navigation/drawer react-native-gesture-handler react-native-bootsplash @react-native-async-storage/async-storage
 
 cat << 'EOF' > babel.config.js
 module.exports = {
@@ -98,6 +98,7 @@ Installed Dependencies:
 - @react-navigation/material-top-tabs
 - @react-navigation/drawer
 - @react-native-async-storage/async-storage
+- @react-native-vector-icons/lucide
 - react-native-screens
 - react-native-safe-area-context
 - react-native-worklets
@@ -105,7 +106,6 @@ Installed Dependencies:
 - react-native-gesture-handler
 - react-native-svg
 - react-native-bootsplash
-- lucide-react-native
 EOF
 
 echo -e "\nYou can verify and see the list of all installed dependencies in ${BOLD}installed-deps.txt${RESET} file"
