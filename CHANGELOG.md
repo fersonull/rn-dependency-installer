@@ -41,6 +41,7 @@ This project follows a **pragmatic changelog format** focused on clarity and usa
 - Babel configuration now includes `react-native-reanimated/plugin` by default
 - Installation flow is more modular and maintainable
 - README updated with **Quick Setup** and **Advanced Setup** options
+- Fetch and download using curl all dependency files (**deps.prod.txt** and **deps.dev.txt**) first instead of directly calling the them
 
 ### ♻️ Kept (Backward Compatibility)
 

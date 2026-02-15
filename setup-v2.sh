@@ -34,6 +34,11 @@ die() {
 # =========================
 # PRECHECKS
 # =========================
+log "Downloading dependencies files..."
+
+curl -fsSL https://raw.githubusercontent.com/fersonull/rn-dependency-installer/main/deps.prod.txt -o deps.prod.txt
+curl -fsSL https://raw.githubusercontent.com/fersonull/rn-dependency-installer/main/deps.dev.txt -o deps.dev.txt
+
 log "Running preflight checks..."
 
 command -v npm >/dev/null 2>&1 || die "npm is not installed"
