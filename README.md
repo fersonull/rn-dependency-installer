@@ -45,7 +45,7 @@ Happy coding!
 
 ### Previous Version
 
-If you encounter any error while using this latest version of the script, you can still use the previous version:
+If you encounter any error while using the latest version of the script, you can still use the previous version:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/fersonull/rn-dependency-installer/main/setup.sh | bash
