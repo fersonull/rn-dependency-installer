@@ -39,6 +39,8 @@ curl -fsSL https://raw.githubusercontent.com/fersonull/rn-dependency-installer/m
 
 This will run the script and setup your environment. After that, you can now start developing you ReactNative project.
 
+Happy coding!
+
 ---
 
 ### Previous Version
