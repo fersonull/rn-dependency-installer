@@ -1,0 +1,5 @@
+# Styling
+tailwindcss@^3.4.17
+
+# NativeWind helpers
+react-native-worklets

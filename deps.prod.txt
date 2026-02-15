@@ -1,0 +1,24 @@
+# =========================
+# Core / Animation
+# =========================
+react-native-reanimated
+react-native-svg
+react-native-safe-area-context
+react-native-screens
+react-native-gesture-handler
+
+# =========================
+# Navigation
+# =========================
+@react-navigation/native
+@react-navigation/native-stack
+@react-navigation/bottom-tabs
+@react-navigation/material-top-tabs
+@react-navigation/drawer
+
+# =========================
+# Utilities
+# =========================
+@react-native-async-storage/async-storage
+@react-native-vector-icons/lucide
+react-native-bootsplash
