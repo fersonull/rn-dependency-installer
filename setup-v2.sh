@@ -49,7 +49,7 @@ command -v npm >/dev/null 2>&1 || die "npm is not installed"
 # =========================
 # PACKAGE MANAGER DETECTION
 # =========================
-if command -v pnpm >/dev/null 2>&1; then
+if command -v npm >/dev/null 2>&1; then
   PM="npm"
 elif command -v yarn >/dev/null 2>&1; then
   PM="yarn"
