@@ -6,6 +6,19 @@ This project follows a **pragmatic changelog format** focused on clarity and usa
 
 ---
 
+## [2.0.1] – PowerShell Native Support
+
+### Added
+
+- Native PowerShell (.ps1) installer script for Windows users
+
+### Kept (Backward Compatibility)
+
+- Original one-command setup script (`setup.sh`) and (`setup-v2.sh`) is still supported
+- No breaking changes for users relying on the old installer
+
+---
+
 ## [Unreleased]
 
 - Planned improvements
@@ -17,7 +30,7 @@ This project follows a **pragmatic changelog format** focused on clarity and usa
 
 ## [2.0.0] – Advanced Installer Release
 
-### ✨ Added
+### Added
 
 - File-based dependency management using:
   - `deps.prod.txt`
@@ -35,7 +48,7 @@ This project follows a **pragmatic changelog format** focused on clarity and usa
 - Safer, idempotent script execution
 - Better Windows support via **Git Bash**
 
-### 🔧 Changed
+### Changed
 
 - Dependency lists are no longer hardcoded inside the script
 - Babel configuration now includes `react-native-reanimated/plugin` by default
@@ -43,7 +56,7 @@ This project follows a **pragmatic changelog format** focused on clarity and usa
 - README updated with **Quick Setup** and **Advanced Setup** options
 - Fetch and download using curl all dependency files (**deps.prod.txt** and **deps.dev.txt**) first instead of directly calling the them
 
-### ♻️ Kept (Backward Compatibility)
+### Kept (Backward Compatibility)
 
 - Original one-command setup script (`setup.sh`) is still supported
 - No breaking changes for users relying on the old installer
@@ -52,7 +65,7 @@ This project follows a **pragmatic changelog format** focused on clarity and usa
 
 ## [1.0.0] – Initial Release
 
-### 🎉 Added
+### Added
 
 - One-command setup using `curl | bash`
 - NativeWind installation and configuration
@@ -64,7 +77,7 @@ This project follows a **pragmatic changelog format** focused on clarity and usa
 
 ---
 
-## 🧭 Versioning Notes
+## Versioning Notes
 
 - **Major versions** indicate installer architecture changes
 - **Minor versions** add features without breaking existing usage
@@ -72,5 +85,5 @@ This project follows a **pragmatic changelog format** focused on clarity and usa
 
 ---
 
-Happy coding! 🚀  
+Happy coding!  
 If you have suggestions or issues, feel free to open a PR or issue.
